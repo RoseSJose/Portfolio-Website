@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    -->
+</head>
+<body>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo">Rose S Jose</a>
+            <ul class="menu">
+                <li class="active"><a href="#main">Home</a></li>
+                <li ><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="name">
+            <p>Hello</p>
+            <h1>I'm <font color="#85223e">Rose S Jose</font></h1>
+            <p class="details">I am a Computer Science and Engineering student</p>
+            <a href="#projects" class="cv-btn">View my work</a>
+           </div> 
+         
+    </section>
+    <section id="about">
+        <div class="about-text">
+        <h1>About Me</h1>
+        <h2>Computer Science and Engineering student</h2>
+        <p>A student in pursuit of gathering knowledge in Computer Science, now doing undergraduate course in the same at National Institute of Technology, Calicut. I yearn to excel in Machine Learning. </p>
+        <button>Download CV</button>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="s-heading">
+        <h1>Projects</h1>
+        <p>Here Is Some Of My Works.</p>
+        </div>
+        <div class="b-container">
+            <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Predicting Housing Prices</div>
+                <img src="data:image/png;base64,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" alt="image not found">
+            </div>
+            <div class="s-b-text">
+            <a href="#">Used a test-driven approach to build a Linear Regression model using Python. A trained model was used to predict house sale prices and was extended to a multivariate Linear Regression.</a>	
+            </div>
+            </div>
+            <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Classifiaction Of Breast Cancer</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJ_0wRE22gGvgOn6BLUSvikXntGphcD-JSA&usqp=CAU" alt="image not found">
+            </div>
+            <div class="s-b-text">
+            <a href="#">Developed a Machine Learning Model to predict if the breast cancer is malignant or benign using different algorithm and found out the best.</a>	
+            </div>
+            </div>
+            <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Virtual Assistant</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZN6rLtmzSuWcrOP1Q7ItBH8wImXQDnTThng&usqp=CAU" alt="image not found">
+            </div>
+            <div class="s-b-text">
+            <a href="#">Developed a virtual assistant using NLP that can take commands and do operation like sending email, play music, inform us the time, and searching.</a>	
+            </div>
+            </div>
+            </div>
+            </section>
+        
+	<section id="contact-form">
+        <form>
+        <div class="contact-left">
+        <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us</h1>
+        <div class="f-name">
+        <font >Name</font>
+        <input type="text" placeholder="Full Name"/>
+        </div>
+        <div class="f-email">
+        <font >Email</font>
+        <input type="email" placeholder="Example@gmail.com"/>
+        </div>
+        </div>
+        <div class="contact-right">
+        <div class="message">
+        <font >Message</font>
+        <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+        </div>
+        <button>submit</button>
+        </div>
+            
+        </form>
+        </section>
+      <!--  <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
+	
+		  /*Responsive Navigation*/
+	  $(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')
+		 
+		 $('nav ul').toggleClass('active-menu')
+		
+		 
+	 })
+ });
+	
+	</script>-->
+</body>
+</html>
